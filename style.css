@@ -1,91 +1,86 @@
-section table{
+section#liste{
     font-family: 'Courier New', Courier, monospace;
-border-collapse: separate;
-width: 400px;
-margin: 50px;
-    
+    border-collapse: collapse;
+    width: 400px;
+    margin: 50px;
 }
 
-section{
-border-style: 1px, solid #ddd;
-padding: 8px;
+section#liste td,section#liste tr{
 
+    border: 1px bold #ddd;
+    padding: 8px;
 }
-
-tr:nth-child(even){
+section#liste tr:nth-child(even){
     background-color: #f2f2f2;
+}
+section#liste tr:hover{
+    background-color: #dddddd;
 
 }
-th{          /* POUR L'en tete*/
-    padding-top:12px;
+section#liste th{
+    padding-top: 12px;
     padding-right: 8px;
     padding-bottom: 20px;
     padding-left: 8px;
     text-align: left;
     background-color: #ff715b;
     color: white;
+
+
+}
+
+
+
+
+section#message h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospaces;
+    
+    }    
+    title{
+    
+        text-align: center;
     
     }
-    h1{
-        text-align: center;
-        font-family: 'Courier New', Courier, monospaces;
-        
-        }    
-        
-        th{          /* POUR L'en tete*/
-        padding-top:12px;
-        padding-right: 8px;
-        padding-bottom: 20px;
-        padding-left: 8px;
-        text-align: left;
-        background-color: #ff715b;
-        color: white;
-        
-        }
-        title{
-        
-            text-align: center;
-        
-        }
-        
-        section form{
-        
-            box-sizing: border-box;
-            width: 100%;
-            padding-top: 20px;
-            padding-bottom: 0px;    
-        }
-        
-         section label , section select, section input{
-        
-            display: block;
-            width: 100%;
-            padding: 0px;
-            margin: 0px;
-            font-family: 'Courier New', Courier, monospace;
-            color: #4C5454;
-            font-size: 18px;
-        }
-        select select, section input {
-            box-sizing: border-box;
-            background-color: #ff715b;
-            border-style: 1px solid #4c5454;
-            border-radius: 5px;
-            padding-top:15px;
-            padding-bottom: 15px;
-            padding-left:10px;
-            padding-right: 10px;
-        
-        }
-        label, section{
-        
-            margin-top: 30px;
-        }
-        section input{
-        
-            background-color: #ff715b;
-        }
-        
+    section#message label , section#message select, section#message input{
     
+        display: block;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #4C5454;
+        font-size: 18px;
+    }
+    
+    section form{
+    
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 0px;    
+    }
+    
+    section#message select, section#message input {
+        box-sizing: border-box;
+        background-color:cyan;
+        border-style: 1px solid #4c5454;
+        border-radius: 5px;
+        padding-top:15px;
+        padding-bottom: 15px;
+        padding-left:10px;
+        padding-right: 10px;
+    
+    }
+    section#message input ,section#message submit {
+    
+        margin-top: 30px;
+    }
+    section#message input{
+    
+        background-color: #dddddd;
+    }
+
+ 
 
 

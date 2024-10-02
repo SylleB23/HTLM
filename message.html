@@ -15,28 +15,68 @@
 
     <h1>Envoi d'un message</h1>
     
-    <form>
+    <form action="/rest.php" method="post">
     <label for="afficheur-select">Selectionner une classe:</label>
+
+
 <select id="afficheur-select" name="afficheur">
+    
 
-    <option>CP A</option>
-    <option>CP B</option>
-    <option>CE1 A</option>
-    <option>CE1 B</option>
-    <option>CE2 A</option>
-    <option>CE2 B</option>
-    <option>CM1 A</option>
-    <option>CM1 B</option>
-    <option>CM2 A</option>
-    <option>CM2 B</option>
+    <option value="172.20.21.158">CP A</option>
+    <option value="172.20.21.157">CP B</option>
+    <option  value="172.20.21.159">CE1 A</option>
+    <option value="172.20.21.160">CE1 B</option>
+    <option  value="172.20.21.161">CE2 A</option>
+    <option  value="172.20.21.162">CE2 B</option>
+    <option  value="172.20.21.163">CM1 A</option>
+    <option value="172.20.21.164">CM1 B</option>
+    <option  value="172.20.21.165">CM2 A</option>
+    <option  value="172.20.21.166">CM2 B</option>
 </select>
-
     <label for="pseudo-select">Message à envoyer :</label>
     <input type="text" id="pseudo-select" name="psuedo"/>
+   
+
+   
+    <label for="select-effetapparition">Effet d'apparition :</label>
+    <select id="select-effetapparition" name="effetapparition">
+        <option value="FA">Immediate</option>
+        <option value="FB">Xopen</option>
+        <option value="FC">Curtain Up</option>
+        <option value="FD">Curtain Down</option>
+    </select>
+
+
+    <label for="select-effetaffichage">Effet affichage :</label>
+    <select id="select-effetaffichage" name="effetaffichage">
+        <option value="MR"> Normal(Fast)</option>
+        <option value="E2">Blinking(Middle Fast)</option>
+        <option value="MR">Blinking (Middle Slow)</option>
+        <option  value="E4">Normal(Slow)</option>
+
+    </select>
+  
+    <label for="select-dureeaffichage">Durée d'affichage :</label>
+    <select id="select-dureeaffichage" name="dureeaffichage">
+        <option  value="M1">1sec.</option>
+        <option  value="M2">2sec.</option>
+        <option  value="M3">3sec.</option>
+        <option  value="M4">4sec.</option>
+
+    </select>
+
+    <label for="select-effetdisparition">Effet disparition :</label>
+    <select id="select-effetdisparition" name="effetdisparition">
+        <option value="F1">Immediate</option>
+        <option value="F2">Scroll Up</option>
+        <option value="F3">Scroll Down</option>
+        <option value="F4">Hold</option>
+
+    </select>
     <input type="submit" value="Envoyer"/>
+
     </form>
     </section>
-
     </body>
     </html>
 
